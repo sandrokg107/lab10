@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab10.View.Operaciones">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Enter value 1" Text="{Binding Valor1}" />
+            <Entry Placeholder="Enter value 2" Text="{Binding Valor2}" />
+            <Entry Placeholder="Enter value 2" Text="{Binding Valor3}" />
+
+            <Button Text="Sumar" Command="{Binding Sumar}" />
+            <Button Text="multiplicar" Command="{Binding Multiplicar}" />
+
+            <Label Text="{Binding Resultado}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
